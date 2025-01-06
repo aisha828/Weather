@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 17.0626,
+    "lat": 39.3824
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 283.86,
+    "feels_like": 282.68,
+    "temp_min": 283.86,
+    "temp_max": 283.86,
+    "pressure": 1032,
+    "humidity": 65,
+    "sea_level": 1032,
+    "grnd_level": 1024
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.57,
+    "deg": 297,
+    "gust": 1.57
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1735681792,
+  "sys": {
+    "country": "IT",
+    "sunrise": 1735625496,
+    "sunset": 1735659469
+  },
+  "timezone": 3600,
+  "id": 2524980,
+  "name": "Cirò",
+  "cod": 200
+}
