@@ -95,7 +95,7 @@ class MyCard extends GetView<HomeController> {
                           children: <Widget>[
                             Container(
                               padding:
-                                  EdgeInsets.only(top: 15, left: 20, right: 20),
+                                  EdgeInsets.only( left: 20, right: 20),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[

@@ -1,5 +1,4 @@
 import 'package:weather/Screen/model/clouds.dart';
-import 'package:weather/Screen/model/coord.dart';
 import 'package:weather/Screen/model/main_weather.dart';
 import 'package:weather/Screen/model/sys.dart';
 import 'package:weather/Screen/model/weather.dart';
@@ -7,7 +6,7 @@ import 'package:weather/Screen/model/wind.dart';
 
 
 class CurrentWeatherData {
-  final Coord? coord;
+
   final List<Weather>? weather;
   final String? base;
   final MainWeather? main;
@@ -22,7 +21,7 @@ class CurrentWeatherData {
   final int? cod;
 
   CurrentWeatherData(
-      {this.coord,
+      {
       this.weather,
       this.base,
       this.main,
@@ -42,7 +41,6 @@ class CurrentWeatherData {
     }
 
     return CurrentWeatherData(
-      coord: Coord.fromJson(json['coord']),
       weather:
           (json['weather'] as List).map((w) => Weather.fromJson(w)).toList(),
       base: json['base'],

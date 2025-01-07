@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:weather/Screen/model/current_weather_data.dart';
 import 'package:weather/Screen/model/five_hours_data.dart';
-import 'package:weather/Screen/service/weather_service.dart';
+import 'package:weather/Screen/service/api_service.dart';
 
 class HomeController extends GetxController {
   String? city;
@@ -25,7 +25,7 @@ class HomeController extends GetxController {
   }
   void initState() {
     getCurrentWeatherData();
-    getFiveDaysData();
+    getFiveHouersData();
   }
 
   void getCurrentWeatherData() {
@@ -64,9 +64,9 @@ class HomeController extends GetxController {
     });
   }
 
-  void getFiveDaysData() {
+  void getFiveHouersData() {
     if (city != null) {
-      WeatherService(city: city!).getFiveDaysThreeHoursForcastData(
+      WeatherService(city: city!).getFiveHoursForcastData(
         onSuccess: (data) {
           fiveHoursData = data;
           update();
